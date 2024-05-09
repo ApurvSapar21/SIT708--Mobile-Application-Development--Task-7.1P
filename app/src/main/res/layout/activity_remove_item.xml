@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/removeItemsHeadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMOVE LOST &amp; FOUND ITEMS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- Item Name TextView -->
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        app:layout_constraintTop_toBottomOf="@id/removeItemsHeadingTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Item Phone TextView -->
+    <TextView
+        android:id="@+id/itemPhoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Phone"
+        app:layout_constraintTop_toBottomOf="@id/itemNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Item Description TextView -->
+    <TextView
+        android:id="@+id/itemDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Description"
+        app:layout_constraintTop_toBottomOf="@id/itemPhoneTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Item Date TextView -->
+    <TextView
+        android:id="@+id/itemDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Date"
+        app:layout_constraintTop_toBottomOf="@id/itemDescriptionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Item Location TextView -->
+    <TextView
+        android:id="@+id/itemLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Location"
+        app:layout_constraintTop_toBottomOf="@id/itemDateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Remove Button -->
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMOVE"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

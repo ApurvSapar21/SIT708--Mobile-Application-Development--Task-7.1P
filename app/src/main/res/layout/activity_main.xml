@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Bold Heading at the Top -->
+    <TextView
+        android:id="@+id/appTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Lost and Found App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- CREATE A NEW ADVERT Button -->
+    <Button
+        android:id="@+id/createAdvertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE A NEW ADVERT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appTitleTextView"
+        android:layout_marginTop="64dp" />
+
+    <!-- SHOW ALL LOST & FOUND ITEMS Button -->
+    <Button
+        android:id="@+id/showItemsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW ALL LOST &amp; FOUND ITEMS"
+        android:layout_below="@id/createAdvertButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
